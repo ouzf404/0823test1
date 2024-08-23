@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>말랑멜로</title>
+
+
+  <!-- 링크 5 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/script.js" defer></script>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+<body>
+
+  <!-- 01문제
+   1)header (95%*120px)
+   -최대너비: 1180px
+   -가운데 정렬
+   -아래쪽 테두리 1px
+   2)gnb(flex)
+   -li우측배치, 여백, 글자서식
+   3)nav(flex)
+   -logo 왼쪽, menu 우측배치
+   4) menu (높이: 55px) -->
+
+  <header class="header">
+
+    <ul class="gnb">
+      <li><a href="#">장바구니</a></li>
+      <li><a href="#">문의</a></li>
+      <li><a href="#">로그인</a></li>
+      <li><a href="#">소개글</a></li>
+      <li><a href="#">오시는 길</a></li>
+    </ul>
+ 
+
+  <nav class="nav">
+    <div class="logo">
+      <a href="#">
+        <img src="img/logo.png" alt="logo">
+      </a>
+    </div>
+    <ul class="menu">
+      <li><a href="#">시그니처</a></li>
+      <li><a href="#">수면 잠옷</a></li>
+      <li><a href="#">숙면 비밀템</a></li>
+      <li><a href="#">수면 상식</a></li>
+      <li><a href="#">유튜브</a></li>      
+    </ul>
+
+    <div class="mobile">
+      <div class="m_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div><!-- m-btn end -->
+   
+    <ul class="m_menu">
+      <li><a href="#">시그니처</a></li>
+      <li><a href="#">수면 잠옷</a></li>
+      <li><a href="#">숙면 비밀템</a></li>
+      <li><a href="#">수면 상식</a></li>
+      <li><a href="#">유튜브</a></li>  
+    </ul>
+  </div><!-- mobile end -->
+  </nav>
+ </header>
+ 
+
+ <!-- 02 문제
+  1)main ( 100%*(100vh - 121px) )
+  -video가 화면 전체 채워지도록 css 작성 -->
+
+ <div class="main">
+  <video src="img/morning_sleep.mp4" loop muted autoplay></video>
+  <div class="title">
+    <h1>상쾌한 수면의  비밀</h1>
+    <p>
+      어느새 떨어진 수면의 질, 부드러운 촉감을 살린
+      잠옷과 함께 상쾌한 아침을 맞아보시는 건 어떠실까요?
+      <br>
+      저희 브랜드가 함께 고민해드리겠습니다.
+    </p>
+    <a href="#">잠옷 보러가기 ></a>
+  </div><!-- title end -->
+ </div> <!-- main end -->
+
+
+ <!-- 03 문제
+  1)~1024px
+  -list의 li가 2개씩 2줄로 나오도록 레이아웃 변경
+  2)~767px(추가)
+  -list의 li가 1개씩 4줄로 나오도록 레이아웃 변경 -->
+ <div class="contents">
+
+  <h2>다양한 상품과 소식을 만나보세요</h2>
+
+  <ul class="list">
+
+    <li>
+      <a href="#">
+        <img src="img/sheep7.jpg" alt="news1">
+        <p>말랑멜로 잠옷의 비밀</p>
+        <p>
+          잠옷이 어떤 소재로 만들어지는지 궁금하신 분들을 위해 마련했습니다. 편안한 숙면을 위한 제작과정을 즐겨보세요.
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="img/bedroom1.jpg" alt="news2">
+        <p>아늑한 공간을 사랑한 침실</p>
+        <p>
+          말랑멜로의 이불커버와 베개커버를 둘러보시겠어요? 아늑한 공간을 만들어줄
+          차분한 색감의 커버들...
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="img/mountain.jpg" alt="news3">
+        <p>숙면에 대한 상식</p>
+        <p>
+          불면증이 있거나 잠들기 무서운 분들을 위한 소식지. 수면에 관한 전문적인 정보들을 만나보세요. 더 자세한 정보는 클릭!
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="img/sleep_mask2.jpg" alt="news4">
+        <p>수면 보조용품 코너</p>
+        <p>
+          잠옷만으로 만족 못하시는 분들을 위한 보조용품 코너. 수면안대, 수면양말 등 아늑한 일상을 위한 소품들을 만나보세요.
+        </p>
+      </a>
+    </li>
+
+  </ul><!-- list end -->
+
+ </div><!-- contents end -->
+
+ <!-- section -->
+
+ <footer class="footer">
+    <div class="f_wrap">
+      <div class="f_top">
+        <div class="f_logo">DCODLAB</div>
+        <ul class="f_menu">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용안내</a></li>
+        </ul>
+      </div><!-- f_top end -->
+
+      <div class="copyright">
+        말랑멜로 | 말랑하고 포근한 수면용품 브랜드
+        <br>
+        TEL : 031-111-1234 C.P : 010-1234-5678
+        <br><br>
+        2024 mallangmello © copyright all right reserved.
+      </div><!-- copyright end -->
+      
+    </div><!-- f_wrap end -->
+ </footer>
+
+  
+</body>
+</html>
